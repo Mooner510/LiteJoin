@@ -1,0 +1,4 @@
+name: LiteJoin
+version: '${version}'
+main: org.mooner.litejoin.LiteJoin
+api-version: 1.18
