@@ -38,7 +38,7 @@ public final class LiteJoin extends JavaPlugin implements Listener {
         for (Player p : Bukkit.getOnlinePlayers()) {
             p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(chat("&f&l[&a&l✔&f&l] &f" + e.getPlayer().getName())));
         }
-        Bukkit.getConsoleSender().sendMessage(chat(e.getJoinMessage()));
+        Bukkit.getConsoleSender().sendMessage(chat("&e" + e.getPlayer().getName() + " joined the server"));
     }
 
     @EventHandler
@@ -47,6 +47,6 @@ public final class LiteJoin extends JavaPlugin implements Listener {
         for (Player p : Bukkit.getOnlinePlayers()) {
             p.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(chat("&f&l[&c&l✕&f&l] &f" + e.getPlayer().getName())));
         }
-        Bukkit.getConsoleSender().sendMessage(chat(e.getQuitMessage()));
+        Bukkit.getConsoleSender().sendMessage(chat("&e" + e.getPlayer().getName() + " left the server"));
     }
 }
