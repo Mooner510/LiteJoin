@@ -1,4 +1,6 @@
 name: LiteJoin
-version: '${version}'
+version: 1.0
 main: org.mooner.litejoin.LiteJoin
 api-version: 1.18
+depend:
+  - BungeeAPI
